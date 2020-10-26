@@ -43,6 +43,76 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
+.container-intrebari{
+  position: relative;
+  width: 100%;
+  height: 40%;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: rgba(233, 232, 232, 0.5);
+}
+
+.container-intrebari p{
+  color: black;
+}
+
+.c-btn{
+  position: absolute;
+  bottom: 1rem;
+  width: 25rem;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.c-btn button{
+  color: white;
+  background-color: #01405db3;
+  font-size: 1.4rem;
+  border-radius: 4rem;
+  transition: all 0.6s ease-out;
+}
+
+.c-btn button:hover{
+  background-color: #eff5f8b3;
+}
+
+.c-btn span{
+  font-size: 1.3rem;
+}
+
+.c-text{
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-text p{
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+}
+/* @media screen and (max-width: 770px) {
+  .c-btn{
+    flex-direction: column;
+  }
+
+  .container-intrebari{
+    height: 48rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container-intrebari{
+    height: 32rem;
+  }
+} */
+
+
+
 ::-webkit-scrollbar {
   width: 5px
 }
