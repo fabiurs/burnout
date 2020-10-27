@@ -38,10 +38,15 @@ function arataConcluzie(p){
         intrebare.innerHTML ="Ati obtinut un numar de "+puncte+" puncte." +  "<br>Aveti un risc ridicat de burnout.";
     }
 }
+
 function schimbaIntrebare(){
     if(poz < 19){
         poz++;
-        intrebare.innerHTML = arrIntrebari[poz];
+        intrebare.style.opacity = "0";
+        setTimeout(() => {
+            intrebare.innerHTML = arrIntrebari[poz];
+            intrebare.style.opacity = "1";
+        }, 700);
     }
     else{
         buttons.style.display = "none";

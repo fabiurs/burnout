@@ -43,13 +43,17 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
+/* QUIZ */
+
 .container-intrebari{
   position: relative;
   width: 100%;
-  height: 40%;
   border-radius: 1rem;
   padding: 2rem;
   background-color: rgba(233, 232, 232, 0.5);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .container-intrebari p{
@@ -59,7 +63,7 @@
 .c-btn{
   position: absolute;
   bottom: 1rem;
-  width: 25rem;
+  width: 95%;
   padding-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -67,6 +71,7 @@
 }
 
 .c-btn button{
+  margin: 2px;
   color: white;
   background-color: #01405db3;
   font-size: 1.4rem;
@@ -80,6 +85,7 @@
 
 .c-btn span{
   font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .c-text{
@@ -90,28 +96,48 @@
   justify-content: center;
 }
 
-.c-text p{
-  font-size: 1.5rem;
+#intrebare{
+  font-size: 1.7rem;
+  height: 10rem;
   color: black;
   text-align: center;
+  transition: all 0.5s ease-out;
 }
-/* @media screen and (max-width: 770px) {
+
+@media screen and (max-width: 570px) {
+  .container-intrebari{
+    height: 33rem;  
+  }
+
   .c-btn{
     flex-direction: column;
   }
+}
 
+@media screen and (max-width: 770px) {
   .container-intrebari{
-    height: 48rem;
+    padding: 1rem;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .container-intrebari{
-    height: 32rem;
+  .c-btn button{
+    font-size: 1rem;
+    padding: 1rem;
   }
-} */
+  .c-btn span{
+    font-size: 1rem;
+  }
+
+  #intrebare{
+    font-size: 1.3rem;
+  }
+}
 
 
+
+
+/* end quiz */
 
 ::-webkit-scrollbar {
   width: 5px
@@ -2464,6 +2490,12 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover
+}
+
+@media screen and (max-width: 560px) {
+  .masthead{
+    padding: 10rem 0;
+  }
 }
 
 .masthead h1 {
