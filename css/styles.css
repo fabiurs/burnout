@@ -44,6 +44,9 @@
 }
 
 /* QUIZ */
+p{
+  text-indent: 2rem;
+}
 
 .container-intrebari{
   position: relative;
